@@ -86,6 +86,15 @@ module "azure_vector_search_custom" {
 }
 ```
 
+## Cost
+
+A default deployment of this module will generate the following costs against your Azure subscription:
+
+* Azure AI Search (Basic SKU) - $73.73 p/month
+* Azure OpenAI Service (Ada model deployment) - $0.0001 p/1000 tokens, rate-limited to 10k tokens p/min
+
+The maximum combined total cost per month - assuming a constant consumption of 10k tokens p/min from Azure OpenAI - is therefore approximately $117 p/month, or $4 p/day.
+
 ## Acknowledgements
 
 This solution leverages Mastercard's [REST API Terraform provider](https://registry.terraform.io/providers/Mastercard/restapi/latest) to provision the AI Search data source, index, indexer and skillset resources, since these are not yet natively supported by Azure's Terraform provider. Integrating these resources into Terraform using Mastercard's provider is an idea copied from [this Medium article](https://medium.com/expert-thinking/mastering-azure-search-with-terraform-a-how-to-guide-7edc3a6b1ee3), by Jake.
