@@ -41,7 +41,7 @@ This module creates various new Azure resources, all of which are given default 
 
 ### Vector Search Config
 
-Most of the heavy lifting in this solution is done by various subcomponents of the Azure AI Search resource, which this module also manages. These are:
+Most of the heavy lifting in this solution is done by various sub-resources of the Azure AI Search resource, which this module also manages. These are:
 
 * A data source, which points to the data we want to be able to perform vector searches over
 * An index, which is the searchable representation of this data

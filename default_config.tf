@@ -1,6 +1,6 @@
 /*
 
-Default configs for Azure Search Service subcomponents:
+Default configs for Azure Search Service sub-resources:
 
 - Data Source
 - Index
